@@ -1,0 +1,222 @@
+/* body *{
+  border: solid 1px red;
+} */
+
+
+.Header{
+  background-color: black;
+  display:flex;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+.Header__titulo{
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.Header__secciones{
+  font-family: Arial;
+  font-size: 18px;
+  color: #c7c7c7;
+  display: flex;
+  margin-left: auto;
+}
+.Header__secciones:hover{
+  width: 64px;
+  height: 4px;
+  background-color: #42704e;
+}
+
+.Header__botones{
+  margin: 0 10px 0 10px
+}
+
+
+.Sobremi{
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 1 1;
+  padding: 0 30px 0 30px;
+}
+.Sobremi__titulo{
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+.Sobremi__titulo:hover{
+  color:black;
+  width: 4px;
+  height: 22px;
+  background-color: #42704e;
+}
+
+.Sobremi__imagenperfil{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.Sobremi__descripcion{
+  font-family: Arial;
+  font-size: 20px;
+  color:black;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding: 0 50px 0 50px;
+}
+.Sobremi_imagenesredes{
+  grid-column-start: 2;
+  grid-row-start:3;
+  padding: 0 50px 50px 50px;
+}
+
+
+.Portafolio{
+  padding: 50px 30px 0 30px;
+}
+.Portafolio__titulo{
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+.Portafolio__imagenes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Portafolio__imagenes *{
+  border:solid 10px rgb(228, 221, 221);
+  margin: 0 130px 20px 0;
+}
+
+
+
+.Mishabilidades{
+  padding: 50px 30px 0 30px;
+}
+.Mishabilidades__titulo{
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+.Mishabilidades__lista{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.Mishabilidades__card{
+  display: flex;
+  align-items: center
+
+}
+
+.Mishabilidades__nombre{
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  width: 75px;
+}
+
+.Mishabilidades__barratot{
+  background: rgb(219, 210, 210);
+  width: 350px;
+  height: 15px;
+  border-radius: 11px;
+  border: solid 1px rgb(219, 210, 210);
+}
+
+.Mishabilidades__barrareal{
+  width: 125px;
+  height: 15px;
+  border-radius: 9.5px;
+  background-color: rgb(66, 112, 78)
+
+}
+
+.Contactame{
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 1;
+  padding: 50px 30px 50px 30px;
+}
+.Contactame__titulo{
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+.Contactame__formulario{
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 1 1 1;
+  font-family: Helvetica;
+  font-size: 13px;
+  
+}
+.Contactame__input{
+  width: 305px;
+  height: 40px;
+  border: solid 1px rgb(213, 213, 213);
+  margin: 10px 0 30px 0;
+}
+.Contactame__dejameunmensaje{
+  grid-column-start: 1;
+  grid-column-end:3;
+  grid-row-start:3; 
+  
+}
+.Contactame__texarea{
+  width: 750px;
+  height: 140px;
+  border: solid 1px rgb(213, 213, 213);
+  margin: 10px 0 30px 0;
+}
+.Contactame__formularioboton{
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.Contactame__boton{
+  border: solid 1px rgb(213, 213, 213);
+  background-color: rgb(66, 112, 78);
+  width: 160px;
+  height: 44px;
+  font-family: Arial;
+  font-size: 16px;
+  color: rgb(255, 255, 255)
+}
+.Contactame__infocontacto{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-family: Helvetica;
+  font-size: 13px;
+  border-left: 2px solid rgb(213, 213, 213);
+  margin: 0 150px 0 0;
+  padding: 0 0 0 50px ;
+}
+.Contactame__infocontactotitulo{
+  font-weight: bold;
+}
+
+.Footer{
+  background-color: black;
+  font-family: Arial;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+.Footer__creditos{
+  margin-left: auto;
+}
