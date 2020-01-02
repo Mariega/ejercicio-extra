@@ -1,7 +1,3 @@
-/* body *{
-  border: solid 1px red;
-} */
-
 
 .Header{
   background-color: black;
@@ -9,15 +5,14 @@
   align-items: center;
   padding: 0 30px 0 30px;
 }
-.Header :hover{
-  box-shadow: 0 5px 30px 0 var(--greyish-brown-50);
-}
+
 .Header__titulo{
   font-family: Helvetica;
   font-size: 32px;
   font-weight: bold;
   color: #ffffff;
 }
+
 .Header__secciones{
   font-family: Arial;
   font-size: 18px;
@@ -25,16 +20,15 @@
   display: flex;
   margin-left: auto;
 }
-.Header__secciones:hover{
-  width: 64px;
-  height: 4px;
-  background-color: #42704e;
-
-}
-
 .Header__botones{
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
+  padding-bottom: 3px;
 }
+.Header__botones:hover{
+ border-bottom: 5px solid #42704e;
+ margin-bottom: -5px;
+}
+
 
 
 .Sobremi{
@@ -43,17 +37,18 @@
   grid-template-rows: 1 1 1;
   padding: 0 30px 0 30px;
 }
+
 .Sobremi__titulo{
   font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
   color: #c8c8c8;
-}
+  padding-left: 3px;
+  }
 .Sobremi__titulo:hover{
   color:black;
-  width: 4px;
-  height: 22px;
-  background-color: #42704e;
+  border-left: 5px solid #42704e;
+  margin-left: -5px;
 }
 
 .Sobremi__imagenperfil{
@@ -62,9 +57,11 @@
   grid-row-start: 2;
   grid-row-end: 4;
 }
-
-
-
+.Sobremi__imagenperfil:hover{
+  border:5px solid #42704e;
+  border-radius: 500px;
+  margin:-5px;
+}
 
 .Sobremi__descripcion{
   font-family: Arial;
@@ -74,6 +71,7 @@
   grid-row-start: 2;
   padding: 0 50px 0 50px;
 }
+
 .Sobremi_imagenesredes{
   grid-column-start: 2;
   grid-row-start:3;
@@ -81,55 +79,61 @@
 }
 
 
+
 .Portafolio{
   padding: 50px 30px 0 30px;
 }
+
 .Portafolio__titulo{
   font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
   color: #c8c8c8;
+  padding-left: 3px;
 }
 .Portafolio__titulo:hover{
-  font-weight: bold;
-  color: black;
-  width: 4px;
-  height: 22px;
-  background-color: #42704e;
+  color:black;
+  border-left: 5px solid #42704e;
+  margin-left: -5px;
 }
+
 .Portafolio__imagenes{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 .Portafolio__imagenes *{
   border:solid 10px rgb(228, 221, 221);
   margin: 0 130px 20px 0;
 }
 
 
-
 .Mishabilidades{
   padding: 50px 30px 0 30px;
 }
+
 .Mishabilidades__titulo{
   font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
   color: #c8c8c8;
+  padding-left: 3px;
 }
+.Mishabilidades__titulo:hover{
+  color:black;
+  border-left: 5px solid #42704e;
+  margin-left: -5px;
+}
+
 .Mishabilidades__lista{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-
 .Mishabilidades__card{
   display: flex;
   align-items: center
-
 }
 
 .Mishabilidades__nombre{
@@ -147,14 +151,19 @@
   border-radius: 11px;
   border: solid 1px rgb(219, 210, 210);
 }
+.Mishabilidades__barratot:hover{
+  border-radius: 11px;
+  background: #4c2358;
+}
 
 .Mishabilidades__barrareal{
   width: 125px;
   height: 15px;
   border-radius: 9.5px;
   background-color: rgb(66, 112, 78)
-
 }
+
+
 
 .Contactame{
   display: grid;
@@ -162,12 +171,20 @@
   grid-template-rows: 1 1;
   padding: 50px 30px 50px 30px;
 }
+
 .Contactame__titulo{
   font-family: Helvetica;
   font-size: 24px;
   font-weight: bold;
   color: #c8c8c8;
+  padding-left: 3px;
 }
+.Contactame__titulo:hover{
+  color:black;
+  border-left: 5px solid #42704e;
+  margin-left: -5px;
+}
+
 .Contactame__formulario{
   grid-column-start: 1;
   grid-row-start: 2;
@@ -178,6 +195,7 @@
   font-size: 13px;
   
 }
+
 .Contactame__input{
   width: 305px;
   height: 40px;
@@ -188,14 +206,15 @@
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   border: solid 1px #42704e;
 }
+
 .Contactame__dejameunmensaje{
   grid-column-start: 1;
   grid-column-end:3;
   grid-row-start:3; 
-  
 }
+
 .Contactame__texarea{
-  width: 750px;
+  width: 700px;
   height: 140px;
   border: solid 1px rgb(213, 213, 213);
   margin: 10px 0 30px 0;
@@ -204,10 +223,12 @@
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   border: solid 1px #42704e;
 }
+
 .Contactame__formularioboton{
   grid-column-start: 1;
   grid-row-start: 4;
 }
+
 .Contactame__boton{
   border: solid 1px rgb(213, 213, 213);
   background-color: rgb(66, 112, 78);
@@ -217,6 +238,7 @@
   font-size: 16px;
   color: rgb(255, 255, 255)
 }
+
 .Contactame__infocontacto{
   grid-column-start: 2;
   grid-row-start: 1;
@@ -227,9 +249,12 @@
   margin: 0 150px 0 0;
   padding: 0 0 0 50px ;
 }
+
 .Contactame__infocontactotitulo{
   font-weight: bold;
 }
+
+
 
 .Footer{
   background-color: black;
